@@ -1,0 +1,23 @@
+*{
+  color: black;
+  font-size: large;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.actions {
+  opacity: 0;
+}
+
+tr:hover .actions {
+  opacity: 1;
+}
+
+tbody td a {
+  color: #222;
+
+  &:hover {
+    color: #222;
+  }
+}
+.container{
+  height: 75px;
+}
