@@ -21,7 +21,7 @@ const EditContact = () => {
       setEmail(contact.email);
     }
     dispatch(getContact(id));
-  }, [contact]);
+  },[contact, dispatch, id]);
 
   const onUpdateContact = (e) => {
     e.preventDefault();
@@ -67,7 +67,7 @@ const EditContact = () => {
               onChange={(e) => setEmail(e.target.value)}
             />
           </div>
-          <button className="btn btn-warning" type="submit">
+          <button className="btn btn-primary" type="submit">
             Update Contact
           </button>
         </form>
